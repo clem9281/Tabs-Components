@@ -90,6 +90,48 @@
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
 }
+.carousel .box {
+  position: relative;
+  display: none;
+  width: 100%;
+  right: -100%;
+}
+.carousel .box img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 10px;
+}
+.carousel .box button {
+  position: absolute;
+  top: 45%;
+  height: 50px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+.carousel .box .button-left {
+  left: 0;
+}
+.carousel .box .button-right {
+  right: 0;
+}
+.carousel .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.carousel .box-selected {
+  display: block;
+  position: relative;
+  right: 0;
+}
+.carousel .go-left {
+  display: none;
+  position: relative;
+  left: -100%;
+}
 body {
   box-sizing: border-box;
   min-width: 300px;
@@ -115,12 +157,5 @@ body {
   box-shadow: 1px 1px 5px #931d25;
   border-radius: 10px;
   overflow: hidden;
-}
-.section .box {
-  padding: 40px;
-}
-.section .box .box-title {
-  font-size: 24px;
-  padding-bottom: 10px;
-  font-weight: bold;
+  position: relative;
 }
