@@ -33,7 +33,6 @@ class TabLink {
   }
   deselect() {
     const links = document.querySelectorAll(".tabs-link");
-    console.log(links);
     links.forEach(link => link.classList.remove("tabs-link-selected"));
   }
 }
@@ -80,4 +79,4 @@ class Tabs {
   }
 }
 let tabsHolder = new Tabs(links);
-console.log(tabsHolder);
+// console.log(tabsHolder);
